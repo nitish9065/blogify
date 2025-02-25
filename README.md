@@ -1,4 +1,4 @@
-![account](https://github.com/user-attachments/assets/9a890009-98fd-418b-b051-063134a8a28c)### Serverpod + Flutter based Blog App.
+### Serverpod + Flutter based Blog App.
 
 ###  Blog Platform
 
@@ -78,12 +78,14 @@ relevance
 categories and tags.
 6. Scheduling feature for blog.
 
+### Used Riverpod for state management & GoRouter for the app's navigation.
+
 
 ### APP UI!
 ![signup](https://github.com/user-attachments/assets/5daebc32-02c7-4389-82ae-bb145708e361)
 ![login](https://github.com/user-attachments/assets/48a1440b-e497-40b0-869a-0904978d9acd)
 ![home-page](https://github.com/user-attachments/assets/c41f2cbe-a5f4-47b5-a457-fb22f243c7aa)
-[Uploading account.png…]()
+![account](https://github.com/user-attachments/assets/9a890009-98fd-418b-b051-063134a8a28c)
 
 
 Recording of the screen.
