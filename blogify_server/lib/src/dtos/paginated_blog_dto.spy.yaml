@@ -1,0 +1,8 @@
+class: PaginatedBlogDto
+fields:
+    blogs : List<BlogDto>
+    totalCount: int
+    limit: int
+    totalPage : int
+    currentPage : int
+    hasMore : bool

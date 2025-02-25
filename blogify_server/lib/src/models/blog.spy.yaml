@@ -1,0 +1,26 @@
+class: Blog
+table: blogs
+fields:
+  title: String
+  content: String
+  author: AppUser?, relation(name=user_blogs)
+  category: Category?, relation(name=blog_category)
+  tags: List<BlogTag>?, relation(name=blog_junction)
+  comments: List<Comment>?,relation(name=blog_comments)
+  status: PostStatus
+  readingTime: int
+  ### To hold the previous blog Id & next BlogId -> Useful for navigation between multiple blogs.
+  ### the previous post is the corresponding object on the "other" side.
+  previous: Blog?, relation(name=next_previous_blog)
+  ### nextId is a nullable field that stores the id of the next post
+  nextId: int?
+  ### The next post represents the object on "this" side
+  next: Blog?, relation(name=next_previous_blog, field=nextId, onDelete=SetNull)
+
+  createdAt: DateTime, default=now
+  updatedAt: DateTime, default=now
+
+indexes:
+  next_unique_idx:
+    fields: nextId
+    unique: true

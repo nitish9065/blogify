@@ -1,0 +1,12 @@
+class: BlogDto
+fields:
+    id: int
+    title: String
+    content: String
+    author: UserDto
+    tags: List<TagDto>
+    category: CategoryDto
+    readingTime: int
+    createdAt: DateTime
+    updatedAt: DateTime
+    status: PostStatus

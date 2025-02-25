@@ -1,0 +1,11 @@
+class: Category
+table: categories
+fields:
+  name: String
+  icon: String?
+  blogs: List<Blog>?, relation(name=blog_category)
+
+indexes:
+  category_idx:
+    fields: name
+    unique: true

@@ -1,0 +1,8 @@
+class: PaginatedCategoryDto
+fields:
+  categories: List<CategoryDto>
+  totalCount: int
+  totalPage: int
+  currentPage: int
+  limit: int
+  hasMore: bool

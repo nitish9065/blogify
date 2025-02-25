@@ -1,0 +1,15 @@
+class: Comment
+table: comments
+fields:
+  content: String
+  ### User who have written the comment
+  owner: AppUser?, relation(name=user_comments)
+  ### Post on which this comment hav been made
+  postId: int, relation(name=blog_comments, parent=blogs)
+  ### This is self reference in order to store the id of the comment on which reply is being made
+  repliedOnComment: Comment?, relation(name=comment_replies, optional, onDelete=cascade)
+  ### Stores the list of comment/replies made on a comment of a post.
+  replies: List<Comment>?, relation(name=comment_replies)
+
+  createdAt: DateTime, default=now
+  updatedAt: DateTime, default=now

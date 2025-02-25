@@ -1,0 +1,6 @@
+class: UserStats
+fields:
+  userId: int
+  followersCount: int
+  followingCount: int
+  blogCount: int

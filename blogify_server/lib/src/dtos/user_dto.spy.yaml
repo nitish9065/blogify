@@ -1,0 +1,6 @@
+class : UserDto
+fields:
+    id: int
+    name: String
+    profileUrl: String
+    bio: String?

@@ -1,0 +1,9 @@
+class: CreateBlogDto
+fields:
+    id: int?
+    title: String
+    content: String
+    categoryId: int
+    tags: List<int>
+    userId: int
+    status: PostStatus

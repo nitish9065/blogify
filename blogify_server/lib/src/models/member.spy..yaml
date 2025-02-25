@@ -1,0 +1,11 @@
+class: Member
+table: members
+fields:
+  ### The userid of the row who is going to follow another user
+  subscriber: AppUser?, relation(name=user_i_am_following, onDelete=Cascade)
+  ### This is the userId of the row to which user is being subscribed.
+  subscribedTo: AppUser?, relation(name=user_following_me, onDelete=Cascade)
+indexes:
+  subscriptions_unique_idx:
+    fields: subscriberId, subscribedToId
+    unique: true

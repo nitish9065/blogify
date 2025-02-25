@@ -1,0 +1,8 @@
+class: PaginatedTagDto
+fields:
+  tags: List<TagDto>
+  totalCount: int
+  totalPage: int
+  currentPage: int
+  limit: int
+  hasMore: bool

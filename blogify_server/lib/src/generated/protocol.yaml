@@ -1,0 +1,31 @@
+blog:
+  - uploadBlog:
+  - paginateBlogs:
+  - getLatestBlogs:
+  - streamBlogCount:
+  - deleteBlog:
+category:
+  - getCategory:
+  - searchCategories:
+  - createCategory:
+  - deleteTag:
+comment:
+  - paginateComment:
+  - postComment:
+  - updateComment:
+  - deleteComment:
+  - streamCommentCountOfPost:
+example:
+  - hello:
+tag:
+  - paginateTags:
+  - searchTags:
+  - createTag:
+  - deleteTag:
+user:
+  - isEmailAvailable:
+  - currentUser:
+  - getStats:
+  - getUserStats:
+  - followUnfollowUser:
+  - isUserFollowing:

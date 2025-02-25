@@ -1,0 +1,15 @@
+class: AppUser
+table: app_users
+fields:
+  userInfo: module:auth:UserInfo?, relation
+  bio: String
+  blogs: List<Blog>?, relation(name=user_blogs)
+  comments: List<Comment>?, relation(name=user_comments)
+    ### Follower of the user
+  followers: List<Member>?, relation(name=user_following_me)
+  ### Followings of the user
+  followings: List<Member>?, relation(name=user_i_am_following)
+indexes:
+  app_user_unique_userInfo:
+    fields: userInfoId
+    unique: true

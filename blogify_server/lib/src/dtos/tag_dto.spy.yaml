@@ -1,0 +1,5 @@
+class: TagDto
+fields:
+  id: int
+  name: String
+  postCount: int

@@ -1,0 +1,8 @@
+class: CommentDto
+fields:
+  id: int
+  content: String
+  owner: UserDto
+  postId: int
+  repliesCount: int
+  updatedAt: DateTime

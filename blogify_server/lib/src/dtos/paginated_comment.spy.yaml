@@ -1,0 +1,8 @@
+class: PaginatedComments
+fields:
+  comments: List<CommentDto>
+  totalCount: int
+  limit: int
+  totalPage: int
+  currentPage: int
+  hasMore: bool

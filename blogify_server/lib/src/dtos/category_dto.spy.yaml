@@ -1,0 +1,6 @@
+class: CategoryDto
+fields:
+  id: int
+  name: String
+  icon: String?
+  postCount: int

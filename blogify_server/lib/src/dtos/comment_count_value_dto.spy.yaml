@@ -1,0 +1,3 @@
+class: CommentCountStream
+fields:
+  count: int

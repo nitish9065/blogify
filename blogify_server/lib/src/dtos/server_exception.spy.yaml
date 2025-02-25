@@ -1,0 +1,5 @@
+exception: ServerException
+fields:
+  message: String
+  error: String?
+  stackTrace: String?

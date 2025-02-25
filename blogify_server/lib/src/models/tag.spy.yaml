@@ -1,0 +1,10 @@
+class: Tag
+table: tags
+fields:
+  name: String
+  blogs: List<BlogTag>?, relation(name=tag_junction)
+
+indexes:
+  tag_idx:
+    fields: name
+    unique: true

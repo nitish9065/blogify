@@ -1,0 +1,9 @@
+class: BlogTag
+table: blogs_tags
+fields:
+  blog: Blog?, relation(name=blog_junction)
+  tag: Tag?, relation(name=tag_junction)
+indexes:
+  blog_tag_index_idx:
+    fields: blogId, tagId
+    unique: true

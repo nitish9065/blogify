@@ -1,0 +1,6 @@
+enum: PostStatus
+serialized: byName
+values:
+  - draft
+  - published
+  - scheduled
